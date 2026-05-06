@@ -39,8 +39,13 @@ dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
   repositories {
     //        mavenLocal()
-    google()
-    mavenCentral()
+    // 使用阿里云镜像加速下载
+    maven { url = uri("https://maven.aliyun.com/repository/google") }
+    maven { url = uri("https://maven.aliyun.com/repository/public") }
+    maven { url = uri("https://maven.aliyun.com/repository/central") }
+    // Commented out to avoid SSL issues, use Aliyun mirrors instead
+    // google()
+    // mavenCentral()
   }
 }
 

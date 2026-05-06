@@ -1,0 +1,74 @@
+{
+  "models": [
+    {
+      "name": "Gemma-4-E2B-it",
+      "modelId": "litert-community/gemma-4-E2B-it-litert-lm",
+      "modelFile": "gemma-4-E2B-it.litertlm",
+      "description": "A variant of Gemma 4 E2B ready for deployment on Android using [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM/blob/main/docs/api/kotlin/getting_started.md). It supports multi-modality input, with up to 32K context length.",
+      "sizeInBytes": 2583085056,
+      "minDeviceMemoryInGb": 8,
+      "commitHash": "7fa1d78473894f7e736a21d920c3aa80f950c0db",
+      "llmSupportImage": true,
+      "llmSupportAudio": true,
+      "llmSupportThinking": true,
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxContextLength": 32000,
+        "maxTokens": 4000,
+        "accelerators": "gpu,cpu",
+        "visionAccelerator": "gpu"
+      },
+      "taskTypes": [
+        "llm_chat",
+        "llm_prompt_lab",
+        "llm_agent_chat",
+        "llm_ask_image",
+        "llm_ask_audio"
+      ],
+      "bestForTaskTypes": [
+        "llm_chat",
+        "llm_prompt_lab",
+        "llm_agent_chat",
+        "llm_ask_image",
+        "llm_ask_audio"
+      ]
+    },
+    {
+      "name": "Gemma3-1B-IT",
+      "modelId": "litert-community/Gemma3-1B-IT",
+      "modelFile": "gemma3-1b-it-int4.litertlm",
+      "description": "A variant of [google/Gemma-3-1B-IT](https://huggingface.co/google/Gemma-3-1B-IT) with 4-bit quantization ready for deployment on Android using [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM/blob/main/kotlin/README.md).",
+      "sizeInBytes": 584417280,
+      "minDeviceMemoryInGb": 6,
+      "commitHash": "42d538a932e8d5b12e6b3b455f5572560bd60b2c",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 1024,
+        "accelerators": "gpu,cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"],
+      "bestForTaskTypes": ["llm_chat", "llm_prompt_lab"]
+    },
+    {
+      "name": "Qwen2.5-1.5B-Instruct",
+      "modelId": "litert-community/Qwen2.5-1.5B-Instruct",
+      "modelFile": "Qwen2.5-1.5B-Instruct_multi-prefill-seq_q8_ekv4096.litertlm",
+      "description": "A variant of [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) ready for deployment on Android using [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM/blob/main/kotlin/README.md).",
+      "sizeInBytes": 1597931520,
+      "minDeviceMemoryInGb": 6,
+      "commitHash": "19edb84c69a0212f29a6ef17ba0d6f278b6a1614",
+      "defaultConfig": {
+        "topK": 20,
+        "topP": 0.8,
+        "temperature": 0.7,
+        "maxTokens": 4096,
+        "accelerators": "gpu,cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"]
+    }
+  ]
+}
