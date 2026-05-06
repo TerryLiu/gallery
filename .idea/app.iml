@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/app/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/app/src/main/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/app/src/main/assets" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Android/src/app">
+      <sourceFolder url="file://$MODULE_DIR$/../../Android/src/app/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Android/src/app/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Android/src/app/build/generated/ksp/debug/java" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Android/src/app/build/generated/ksp/debug/kotlin" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Android/src/app/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Android/src/app/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Android/src/app/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 35 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
