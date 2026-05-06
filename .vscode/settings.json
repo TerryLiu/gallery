@@ -1,0 +1,41 @@
+{
+  // Kotlin 配置
+  "kotlin.languageServer.enabled": true,
+  "kotlin.debugAdapter.enabled": true,
+  
+  // Java 配置（Kotlin 需要）
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+      "default": true
+    }
+  ],
+  "java.compile.nullAnalysis.mode": "automatic",
+  
+  // Gradle 配置
+  "gradle.nestedProjects": true,
+  "gradle.javaDebug": true,
+  
+  // Android 相关
+  "files.associations": {
+    "*.kt": "kotlin",
+    "*.kts": "kotlin",
+    "*.xml": "xml",
+    "*.gradle": "groovy",
+    "*.gradle.kts": "kotlin"
+  },
+  
+  // 编辑器配置
+  "editor.formatOnSave": true,
+  "[kotlin]": {
+    "editor.defaultFormatter": "mathiasfrohlich.Kotlin"
+  },
+  
+  // 文件监听优化
+  "files.watcherExclude": {
+    "**/.gradle/**": true,
+    "**/build/**": true,
+    "**/.idea/**": true
+  }
+}

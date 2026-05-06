@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "mathiasfrohlich.kotlin",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-gradle",
+    "google.jetpack-composer-previewer",
+    "redhat.java",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-java-test",
+    "vscjava.vscode-maven"
+  ]
+}
